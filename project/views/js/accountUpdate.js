@@ -124,4 +124,43 @@ function isValid(pForm) {
 //     .catch(error => console.error("Error:", error));
 // }
 
+// function submitForm(form) {
+//     if (isValid(form)) {
+//         var xhr = new XMLHttpRequest();
+//         var formData = new FormData(form);
+
+//         xhr.open('POST', form.action, true);
+
+//         xhr.onreadystatechange = function () {
+//             if (xhr.readyState == 4) {
+//                 if (xhr.status == 200) {
+//                     var response = JSON.parse(xhr.responseText);
+//                     handleResponse(response);
+//                 } else {
+//                     console.error('Error:', xhr.status, xhr.statusText);
+//                 }
+//             }
+//         };
+
+//         xhr.send(formData);
+//     }
+// }
+
+// function handleResponse(response) {
+//     if (response.success) {
+//         var successMessage = document.createElement('div');
+//         successMessage.innerHTML = 'Update successful!';
+//         successMessage.className = 'success-message';
+//         document.body.appendChild(successMessage);
+
+//         // Redirect after 2 seconds
+//         setTimeout(function () {
+//             window.location.href = '../views/viewAccount.php';
+//         }, 2000);
+//     } else {
+//         // Display error message
+//         alert('Update failed!'); // You can replace this with your preferred way of displaying failure
+//         // Additional actions after a failed update, if needed
+//     }
+// }
 

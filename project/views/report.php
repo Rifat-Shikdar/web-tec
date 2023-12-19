@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report</title>
     <link rel="stylesheet" href="../views/css/report.css">
+    <script src="../views/js/report.js"></script>
 </head>
 <body>
 <?php
@@ -68,6 +69,12 @@
                     
                 </p>
             </div>
+            <div class="block-2 block">
+                    <p>Show All Reports &nbsp;<br></p> <br>
+                    <button class="btn hover btn-link" onclick="fetch();">View Info</button><br>
+
+                </div>
+                <p id="data"></p>
         </main>
 
 </body>
